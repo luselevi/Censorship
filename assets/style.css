@@ -1,0 +1,239 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+footer {
+    width: 100%;
+    background-color: gray;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    color: white;
+}
+
+footer p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+/* HEADER CSS BEGINS */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    top: 0;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+.active {
+    background-color: red;
+}
+
+#header_title {
+    height: 100%;
+    background-image: url('../images/header_parallax_bg.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    height: 200px;
+}
+
+header h2 {
+    padding-top: 65px;
+    color: white;
+    font-size: 3em;
+    margin: 0;
+}
+
+div#header_div {
+    width: 100%;
+    text-align: center;
+}
+
+
+/* HEADER CSS ENDS */
+
+.centeralign {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.subscribebox {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2em;
+    padding: 20px;
+    background-color: #333;
+    min-width: 300px;
+    width: 18%;
+    min-height: 140px;
+    height: 15%;
+    bottom: 0;
+    position: fixed;
+    z-index: 999;
+}
+
+.subscribebox input,
+button {
+    border-radius: 30px;
+    border: 0;
+    padding: 10px;
+    margin: 2px;
+}
+
+.close_subscribebox {
+    position: absolute;
+    top: 0;
+    right: 4%;
+}
+
+.row {
+    display: flex;
+}
+
+.col1 {
+    flex: 50%;
+}
+
+.col2 {
+    flex: 50%;
+}
+
+.imagecredit_font {
+    font-size: 0.7em;
+}
+
+figure {
+    float: right;
+    margin: 40px;
+    padding: 5px;
+    background-color: #FFF;
+    border: 1px solid #CCC;
+    box-shadow: 5px 5px 5px #828282;
+}
+
+figcaption {
+    text-align: center;
+    font-size: .8em;
+    font-style: italic;
+}
+
+.spacing10x {
+    padding: 10px;
+}
+
+.spacing40x {
+    padding: 40px;
+}
+
+.spacing80x {
+    padding: 80px;
+}
+
+.externalhref {
+    color: red;
+    text-decoration: none;
+}
+
+.externalhref:visited {
+    color: teal;
+}
+
+header,
+main,
+nav,
+footer,
+figure,
+figcaption {
+    display: block;
+}
+
+@media only screen and (max-width: 1024px) {
+    body {
+        margin: 0;
+    }
+    #wrapper {
+        width: auto;
+        margin: 0;
+    }
+    main {
+        margin-left: 0;
+    }
+    nav {
+        float: none;
+        width: auto;
+    }
+    nav li {
+        display: inline-block;
+        /* padding: 0.5em; */
+    }
+    nav ul {
+        text-align: center;
+    }
+    nav a {
+        border-style: none;
+    }
+    h1,
+    h2 {
+        font-size: 120%;
+    }
+    p {
+        font-size: 90%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #wrapper {
+        min-width: 0;
+    }
+    header h1 {
+        padding-left: 0;
+    }
+    h1,
+    h2 {
+        font-size: 100%;
+    }
+    span {
+        font-size: 80%;
+    }
+    figure {
+        display: none;
+    }
+    nav,
+    nav ul,
+    nav li {
+        padding: 0;
+    }
+    nav li {
+        display: block;
+    }
+    nav a {
+        display: block;
+        padding: 0.5em 0;
+        border-bottom: 2px ridge #ffffff;
+    }
+}

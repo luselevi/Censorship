@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+
+<title>Feedback & References | The world of Censorship & Censoring</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="assets/style.css">
+<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+<style>
+input:focus,
+select:focus {
+	outline: 0;
+}
+
+button {
+	background-color: red;
+	color: white;
+	border: 2px solid red;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 20px;
+	padding: 10px;
+}
+
+textarea {
+	background-color: #181818;
+	color: white;
+}
+
+input,
+select {
+	border: 2px solid red;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+	padding: 5px;
+	background-color: #181818;
+	color: white;
+}
+
+.fs1 {
+	max-width: 500px;
+	padding: 16px;
+	border: 2px solid red;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+}
+
+.l1 {
+	margin-bottom: 0px;
+}
+</style>
+</head>
+
+<body style="background-color: #181818; color: white;">
+<div id="wrapper">
+<header>
+<div id="header_title">
+<h2 style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-align: center;" id="page_title">The world of Censorship & Censoring</h2>
+</div>
+<div id="header_div">
+<nav>
+<ul id="header_ul">
+<li><a href="index.html">Home</a></li>
+<li><a href="what_is_censorship.html">What is Censorship?</a></li>
+<li><a href="government_censorship.html">Government Censorship</a></li>
+<li><a href="mpaa.html">MPAA</a></li>
+<li><a href="fcc.html">FCC</a></li>
+<li><a href="guess_the_rating.html">Guess the rating!</a></li>
+<li><a class="active" href="feedback_and_references.html">Feedback & References</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<section id="headerspacing"></section>
+<section class="spacing10x"></section>
+
+<main>
+<div class="row">
+<div class="col1" style="text-align: left; margin-left: 20px;">
+<img src="images/feedback.png" width="200px" style="margin-bottom: 40px;" />
+<form method="POST" action="https://webdevbasics.net/scripts/demo.php">
+<label for="fullName"> Full Name:</label>
+<input type="text" name="fullName" id="fullName">
+<br /><br />
+<label for="EmailID"> E-mail: </label>
+<input type="email" name="EmailID" id="EmailID"><br>
+<br>Which Age group do you belong to?
+<select name="ageGroup" id="ageGroup">
+<option value="Under 13">Under 13</option>
+<option value="13 to 21">13 to 21</option>
+<option value="21 to 35">21 to 35</option>
+<option value="35 to 60">35 to 60</option>
+<option value="Over 60">Over 60</option>
+</select>
+<br /><br />
+<legend>Which of the topics covered here did you find the most interesting:</legend>
+<fieldset class="fs1">
+<input type="radio" id="What_is_Censorship" name="interesting_topic" value="What_is_Censorship">
+<label for="male">What is Censorship?</label><br />
+<input type="radio" id="Government_Censorship" name="interesting_topic" value="Government_Censorship">
+<label for="female">Government Censorship</label><br />
+<input type="radio" id="MPAA" name="interesting_topic" value="MPAA">
+<label for="other">MPAA</label><br />
+<input type="radio" id="FCC" name="interesting_topic" value="FCC">
+<label for="other">FCC</label>
+</fieldset>
+<br />
+<div class="l1">Which topic do you think needs the most improvement:</div>
+<fieldset class="fs1">
+<input type="checkbox" name="IMwiC" id="IMwiC" value="yes">What is Censorship?<br>
+<input type="checkbox" name="IMGC" id="IMGC" value="yes">Government Censorship<br>
+<input type="checkbox" name="IMMPAA" id="IMMPAA" value="yes">MPAA<br>
+<input type="checkbox" name="IMFCC" id="IMFCC" value="yes">FCC<br>
+<div>
+<p id="explainG" style="display:none">If other format, explain: <br>
+<textarea name="explainOtherG" id="explainOtherG" rows="1" cols="40"></textarea></p>
+</div>
+</fieldset>
+<h3>Comments:</h3>
+<textarea name="comments" class="fs1" id="comments" rows="4" cols="50"></textarea>
+<br />
+<button type="submit" id="mySubmit">Submit</button>
+<button type="reset" value="Reset">Reset</button>
+</form>
+</div>
+<div class="col2" style="text-align: center;">
+<h1>References</h1>
+<a class="externalhref" href="https://censorship.laws.com/movie-censorship" target="_blank">Laws - Censorship</a><br />
+<a class="externalhref" href="https://www.aclu.org/other/what-censorship" target="_blank">ACLU</a><br />
+<a class="externalhref" href="http://www.ala.org/advocacy/intfreedom/censorship" target="_blank">Ala</a><br />
+<a class="externalhref" href="https://entertainment.howstuffworks.com/mpaa.htm" target="_blank">HowStuffWorks</a><br />
+<a class="externalhref" href="https://www.regmovies.com/static/en/us/mpaa-ratings" target="_blank">Regmovies</a><br />
+<a class="externalhref" href="https://www.cnn.com/2020/02/25/us/shakira-jlo-super-bowl-halftime-show-fcc-complaints-trnd/index.html" target="_blank">CNN</a><br />
+<a class="externalhref" href="https://www.usatoday.com/story/sports/nfl/2018/01/31/nipplegate-revisited-what-really-happened-between-janet-jackson-and-justin-timberlake/1083557001/" target="_blank">USAToday</a><br />
+<a class="externalhref" href="https://www.britannica.com/topic/Motion-Picture-Association-of-America" target="_blank">Britannica</a>
+</div>
+</div>
+</main>
+<section class="spacing40x"></section>
+
+<div class="subscribebox" id="subscriptionbox" style="right: 0;">
+Subscribe to our<br />Newsletter!
+<span class="close_subscribebox" onclick="closeSubsriptionBox()">x</span>
+<form method="POST" action="#">
+<input type="email" name="EmailID" placeholder="name@domain.com" />
+<button onclick="greetSubscriber()">Shoot!</button>
+</form>
+</div>
+
+<footer>
+<p>Copyright &copy; 2020 | Luse Levi | <a href="sitemap.html" style="text-decoration: none; color: white;">Sitemap</a></p>
+</footer>
+</div>
+</body>
+<script src="assets/cscript.js"></script>
+<script type="text/javascript">
+</script>
+
+</html>

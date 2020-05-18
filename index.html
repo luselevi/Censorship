@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+
+<title>Home | The world of Censorship & Censoring</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="assets/style.css">
+<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+<style>
+#homepage_col1 button {
+	background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+	padding: 30px;
+	margin: 10px;
+	color: white;
+	font-size: 125%;
+}
+
+#homepage_col1 button:hover {
+	background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
+}
+</style>
+</head>
+
+<body>
+<div id="wrapper">
+<header>
+<div id="header_title">
+<h2 style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-align: center;" id="page_title">The world of Censorship & Censoring</h2>
+</div>
+<div id="header_div">
+<nav>
+<ul id="header_ul">
+<li><a class="active" href="index.html">Home</a></li>
+<li><a href="what_is_censorship.html">What is Censorship?</a></li>
+<li><a href="government_censorship.html">Government Censorship</a></li>
+<li><a href="mpaa.html">MPAA</a></li>
+<li><a href="fcc.html">FCC</a></li>
+<li><a href="guess_the_rating.html">Guess the rating!</a></li>
+<li><a href="feedback_and_references.html">Feedback & References</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<section id="headerspacing"></section>
+<main>
+<section>
+<img src="images/viewer_discretion_advised.png" alt="Viewer Discretion Advised" class="centeralign" width="90%" style="padding-top: 10px;" />
+<p class="imagecredit_font" style="text-align:center;">Image Credit: http://www.viewerdiscretionadvised.net/</p>
+</section>
+<br /><br />
+<div class="row">
+<div class="col1" style="text-align: center;" id="homepage_col1">
+<button onclick="window.location.href='what_is_censorship.html'">What is Censorship?</button>
+<button onclick="window.location.href='government_censorship.html'">Government Censorhip</button>
+<button onclick="window.location.href='mpaa.html'">The MPAA</button>
+<button onclick="window.location.href='fcc.html'">The FCC</button>
+<button onclick="window.location.href='guess_the_rating.html'">Guess the Rating!</button>
+<button onclick="window.location.href='feedback_and_references.html'">References</button>
+</div>
+</div>
+
+<br /><br />
+</main>
+<div class="subscribebox" id="subscriptionbox">
+Subscribe to our<br />Newsletter!
+<span class="close_subscribebox" onclick="closeSubsriptionBox()">x</span>
+<form method="POST" action="#">
+<input type="email" name="EmailID" placeholder="name@domain.com" />
+<button onclick="greetSubscriber()">Shoot!</button>
+</form>
+</div>
+
+<footer>
+<p>Copyright &copy; 2020 | Luse Levi | <a href="sitemap.html" style="text-decoration: none; color: white;">Sitemap</a></p>
+</footer>
+</div>
+</body>
+<script src="assets/cscript.js"></script>
+
+
+</html>

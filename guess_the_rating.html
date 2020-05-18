@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+
+<title>Guess the rating! | The world of Censorship & Censoring</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="assets/style.css">
+<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+<style>
+#guess_wall {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	height: 250px;
+}
+
+@media only screen and (max-height: 960px) {
+	#guess_wall {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 1150px) {
+	.row {
+		display: block !important;
+	}
+}
+
+.dropbtn {
+	background-color: red;
+	color: white;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+	background-color: #c80000;
+}
+
+button:focus {
+	outline: 0;
+}
+</style>
+</head>
+
+<body style="background-color: #181818; color: white;">
+<div id="wrapper">
+<header>
+<div id="header_title">
+<h2 style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-align: center;" id="page_title">The world of Censorship & Censoring</h2>
+</div>
+<div id="header_div">
+<nav>
+<ul id="header_ul">
+<li><a href="index.html">Home</a></li>
+<li><a href="what_is_censorship.html">What is Censorship?</a></li>
+<li><a href="government_censorship.html">Government Censorship</a></li>
+<li><a href="mpaa.html">MPAA</a></li>
+<li><a href="fcc.html">FCC</a></li>
+<li><a class="active" href="guess_the_rating.html">Guess the rating!</a></li>
+<li><a href="feedback_and_references.html">Feedback & References</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<section id="headerspacing"></section>
+
+<main>
+<h1 style="text-align: center;">Guess the rating!</h1>
+<h3 style="text-align: center;">Tap on the buttons to rate</h3>
+<div class="row">
+<div class="col1" style="text-align: center;">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2AUmvWm5ZDQ?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="dropdown" id="movie1">
+<button class="dropbtn" onclick="wrongOption()">Rated G</button>
+<button class="dropbtn" onclick="wrongOption()">Rated PG</button>
+<button class="dropbtn" onclick="wrongOption()">Rated PG-13</button>
+<button class="dropbtn" onclick="greetCorrect1()">Rated R</button>
+</div>
+<div id="donemovie1" style="opacity: 0;">
+You guessed it right!
+</div>
+</div>
+<div class="col2" style="text-align: center;">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zuZnRUcoWos?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="dropdown" id="movie2">
+<button class="dropbtn" onclick="wrongOption()">Rated G</button>
+<button class="dropbtn" onclick="wrongOption()">Rated PG</button>
+<button class="dropbtn" onclick="greetCorrect2()">Rated PG-13</button>
+<button class="dropbtn" onclick="wrongOption()">Rated R</button>
+</div>
+<div id="donemovie2" style="opacity: 0;">
+You're fabolous!
+</div>
+</div>
+</div>
+</main>
+<section class="spacing40x"></section>
+<div id="guess_wall">
+<img src="images/black_guess.png" height="250px" />
+</div>
+
+<div class="subscribebox" id="subscriptionbox">
+Subscribe to our<br />Newsletter!
+<span class="close_subscribebox" onclick="closeSubsriptionBox()">x</span>
+<form method="POST" action="#">
+<input type="email" name="EmailID" placeholder="name@domain.com" />
+<button onclick="greetSubscriber()">Shoot!</button>
+</form>
+</div>
+
+<footer>
+<p>Copyright &copy; 2020 | Luse Levi | <a href="sitemap.html" style="text-decoration: none; color: white;">Sitemap</a></p>
+</footer>
+</div>
+</body>
+<script src="assets/cscript.js"></script>
+<script type="text/javascript">
+function greetCorrect1() {
+alert("Congrats, you guessed correctly.");
+document.getElementById('movie1').remove();
+document.getElementById('donemovie1').style.opacity = 100;
+}
+
+function greetCorrect2() {
+alert("Congrats, you guessed correctly.");
+document.getElementById('movie2').remove();
+document.getElementById('donemovie2').style.opacity = 100;
+}
+
+function wrongOption() {
+alert("You guessed incorrectly, please try again.");
+}
+</script>
+
+</html>
